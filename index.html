@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>_log</title>
+  <meta name="viewport" content="width=device-width">
   <style>
   * {
     -webkit-font-smoothing: antialiased;
@@ -74,14 +75,12 @@ const log = document.getElementById('log');
 const sse = new EventSource('/_log');
 
 sse.onmessage = function (event) {
-  console.log('event');
   const li = document.createElement('li');
   const data = JSON.parse(event.data);
   li.innerHTML = `<pre data-type="${data.type}" data-ts="${data.timestamp}" class="txt ${data.type}">${data.txt}</pre>`;
   li.onclick = () => copy(data.txt);
   log.appendChild(li);
   window.scrollTo(0, window.innerHeight);
-  // scroll
 };
 
 var copy = (function () {
