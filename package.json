@@ -1,0 +1,15 @@
+{
+  "name": "inline-log",
+  "version": "1.0.1",
+  "description": "Middleware logger that captures STDOUT + STDERR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Remy Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "intercept-stdout": "^0.1.2"
+  }
+}
