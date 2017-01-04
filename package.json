@@ -1,6 +1,6 @@
 {
   "name": "inline-log",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Middleware logger that captures STDOUT + STDERR",
   "main": "index.js",
   "scripts": {
