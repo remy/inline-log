@@ -72,7 +72,7 @@
 <ul id="log"></ul>
 <script>
 const log = document.getElementById('log');
-const sse = new EventSource('/_log');
+const sse = new EventSource(window.location.pathname);
 
 sse.onmessage = function (event) {
   const li = document.createElement('li');
