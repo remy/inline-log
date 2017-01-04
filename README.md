@@ -6,7 +6,7 @@ Kinda inspired by the way [Zeit's now](https://zeit.co/now) shows you a loading 
 
 ## Install
 
-Firslty get the module: `npm i -s inline-log`, then in your http server (I'm using Express below):
+Firslty get the module: `npm i -S inline-log`, then in your http server (I'm using Express below):
 
 ```js
 app.use('/_logger', require('inline-log')({ limit: 50 }))
